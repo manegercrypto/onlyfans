@@ -9,7 +9,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: #0d0d0d;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
       color: #fff;
       font-family: 'Segoe UI', sans-serif;
       display: flex;
@@ -18,44 +18,60 @@
       justify-content: center;
       min-height: 100vh;
       text-align: center;
+      animation: fadeIn 1s ease-in-out;
     }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      color: #f92672;
+      color: #ff4e91;
     }
     p {
       font-size: 1.2rem;
       margin-bottom: 2rem;
       max-width: 320px;
+      color: #f1f1f1;
     }
     .cta-button {
       padding: 14px 28px;
       font-size: 1.1rem;
-      border: none;
-      border-radius: 8px;
-      background: #f92672;
-      color: white;
+      border: 2px solid #ff4e91;
+      border-radius: 10px;
+      background: transparent;
+      color: #ff4e91;
       text-decoration: none;
       font-weight: bold;
-      transition: background 0.3s ease;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(255, 78, 145, 0.5);
     }
     .cta-button:hover {
-      background: #ff4d88;
+      background: #ff4e91;
+      color: #fff;
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(255, 78, 145, 0.8);
     }
     .hero-image {
       width: 100%;
       max-width: 350px;
-      border-radius: 12px;
+      border-radius: 14px;
       margin-bottom: 1.5rem;
-      box-shadow: 0 0 15px rgba(249, 38, 114, 0.4);
+      box-shadow: 0 0 25px rgba(255, 78, 145, 0.5);
+      transition: transform 0.5s;
+    }
+    .hero-image:hover {
+      transform: scale(1.02);
     }
   </style>
 </head>
 <body>
-  <img src="https://images.unsplash.com/photo-1614281147445-37ec4041a574?auto=format&fit=crop&w=480&q=80" alt="Private Content" class="hero-image" />
+  <img src="girl.jpg" alt="Private Content" class="hero-image" />
   <h1>My Private Content</h1>
   <p>This is where I post my most exclusive, hottest content. Are you ready to see more?</p>
-  <a href="YOUR_SMARTLINK_HERE" class="cta-button" target="_blank">Unlock Now</a>
+  <a href="https://t.mbdaad.link/372125/3785/0?bo=2753,2754,2755,2756&target=videouploads&po=6456&aff_sub5=SF_006OG000004lmDN" class="cta-button" target="_blank">Unlock Now</a>
 </body>
 </html>
